@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaachay/yc-css@master/css/yc-css.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d07d716417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../config/config.css" type="text/css">
+    <link rel="stylesheet" href="./booking.css" type="text/css">
+    <title>Booking|Paradise</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <img src="../../assets/images/paradise-bg.png" class="bg-img" id="bgImg">
+        <span class="bg-mask"></span>
+    </div>
+    <div class="movie-container">
+        <div class="pf-container">
+            <img src="../../assets/images/paradise-poster.png" class="poster" id="poster">
+            <span class="pf-mask"></span>
+        </div>
+        <div class="movie-info">
+            <h1 id="movieName"></h1>
+            <h3 id="dateTime"></h3>
+            <p id="movieContent"> </p>
+            <table class="yc-table-borderless">
+                <tr>
+                    <td>Starring:</td>
+                    <td id="starring"></td>
+                </tr>
+
+                <tr>
+                    <td>Director:</td>
+                    <td id="director"></td>
+                </tr>
+
+                <tr>
+                    <td>Producer:</td>
+                    <td id="producer"></td>
+                </tr>
+                <tr>
+                    <td>Distributor</td>
+                    <td id="distributor"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="trailer">
+        <h3>Trailer</h3>
+        <video class="trailer-video" controls id="video">
+        </video>
+    </div>
+    <form readonly="true">
+        <div class="user-info">
+            <h3 id="formName">Booking Form</h3>
+            <div class="input-box">
+                <p>Customer Name:</p>
+                <input type="text" name="customerName" id="customerName" class="yc-input-outline" onfocus="this.select();" required>
+            </div>
+            <div class="input-box">
+                <p>Phone Number:</p>
+                <input type="text" maxlength="12" name="phoneNo" id="phoneNo" class="yc-input-outline" onfocus="this.select();" required>
+            </div>
+        </div>
+        <div class="seat-position">
+            <p>Seat Position:</p>
+            <div>
+                <div class="seat-group">
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat1" value="1">
+                        <label for="seat1">1</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat2" value="2">
+                        <label for="seat2">2</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat3" value="3">
+                        <label for="seat3">3</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat11" value="11">
+                        <label for="seat11">11</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat12" value="12">
+                        <label for="seat12">12</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat13" value="13">
+                        <label for="seat13">13</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat21" value="21">
+                        <label for="seat21">21</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat22" value="22">
+                        <label for="seat22">22</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat23" value="23">
+                        <label for="seat23">23</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat31" value="31">
+                        <label for="seat31">31</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat32" value="32">
+                        <label for="seat32">32</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat33" value="33">
+                        <label for="seat33">33</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat41" value="41">
+                        <label for="seat41">41</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat42" value="42">
+                        <label for="seat42">42</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat43" value="43">
+                        <label for="seat43">43</label>
+                    </div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat4" value="4">
+                        <label for="seat4">4</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat5" value="5">
+                        <label for="seat5">5</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat6" value="6">
+                        <label for="seat6">6</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat7" value="7">
+                        <label for="seat7">7</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat14" value="14">
+                        <label for="seat14">14</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat15" value="15">
+                        <label for="seat15">15</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat16" value="16">
+                        <label for="seat16">16</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat17" value="17">
+                        <label for="seat17">17</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat24" value="24">
+                        <label for="seat24">24</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat25" value="25">
+                        <label for="seat25">25</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat26" value="26">
+                        <label for="seat26">26</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat27" value="27">
+                        <label for="seat27">27</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat34" value="34">
+                        <label for="seat34">34</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat35" value="35">
+                        <label for="seat35">35</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat36" value="36">
+                        <label for="seat36">36</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat37" value="37">
+                        <label for="seat37">37</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat44" value="44">
+                        <label for="seat44">44</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat45" value="45">
+                        <label for="seat45">45</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat46" value="46">
+                        <label for="seat46">46</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat47" value="47">
+                        <label for="seat47">47</label>
+                    </div>
+                </div>
+                <div class="seat-group">
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat8" value="8">
+                        <label for="seat8">8</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat9" value="9">
+                        <label for="seat9">9</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat10" value="10">
+                        <label for="seat10">10</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat18" value="18">
+                        <label for="seat18">18</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat19" value="19">
+                        <label for="seat19">19</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat20" value="20">
+                        <label for="seat20">20</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat28" value="28">
+                        <label for="seat28">28</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat29" value="29">
+                        <label for="seat29">29</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat30" value="30">
+                        <label for="seat30">30</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat38" value="38">
+                        <label for="seat38">38</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat39" value="39">
+                        <label for="seat39">39</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat40" value="40">
+                        <label for="seat40">40</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat48" value="48">
+                        <label for="seat48">48</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat49" value="49">
+                        <label for="seat49">49</label>
+                    </div>
+                    <div class="seat">
+                        <input type="checkbox" name="seats" id="seat50" value="50">
+                        <label for="seat50">50</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="seat-info">
+            <p>1 Seat Price: <span id="entranceFee">0</span>$</p>
+            <p>You selected: <span id="selectedCount">0</span> Seat(s)</p>
+            <p>Total Cost: <span id="totalCost">0</span>$</p>
+        </div>
+        <div class="payment">
+            <p>PAYMENT METHODS:</p>
+            <div class="payment-logo">
+                <i class="fa-brands fa-cc-visa fa-lg"></i>
+                <i class="fa-brands fa-cc-mastercard fa-lg"></i>
+                <i class="fa-brands fa-cc-jcb fa-lg"></i>
+            </div>
+        </div>
+        <div class="payment-info">
+            <div class="input-box">
+                <p>CardHolder Name:</p>
+                <input type="text" name="cardHolderName" id="cardHolderName" class="yc-input-outline" onfocus="this.select();" required>
+            </div>
+            <div class="input-box">
+                <p>Card Number:</p>
+                <input type="text" name="cardNo" id="cardNo" class="yc-input-outline" onfocus="this.select();" required placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+
+            <div class="payment-secur">
+                <div class="input-box">
+                    <p>Expiration Date:</p>
+                    <input type="text" name="expDate" id="expDate" class="yc-input-outline" onfocus="this.select();" required placeholder="XX/XX">
+                </div>
+                <div class="input-box">
+                    <p>CV Code:</p>
+                    <input type="text" maxlength="3" minlength="3" name="cvCode" id="cvCode" class="yc-input-outline" onfocus="this.select();" required placeholder="XXX">
+                </div>
+            </div>
+        </div>
+        <input type="button" class="yc-btn-fill-r1" id="bookBtn" value="Booking Now">
+    </form>
+    <script type="module" src="./booking.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+</body>
+
+</html>

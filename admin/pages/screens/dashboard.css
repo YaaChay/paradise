@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: calc(100vw - 30px);
+    overflow-x: hidden;
+    background-color: rgb(var(--yc-background-color));
+}
+
+.over-view {
+    width: calc(100vw - 30px);
+}
+
+.over-view .title {
+    padding: 50px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.over-view .title a{
+    text-decoration: none;
+}
+.over-view .content {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+    justify-content: center;
+}
+
+.content .counter-box {
+    margin: 10px;
+    padding: 40px 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(var(--text-color), 0.05);
+    box-shadow: 0px 0px 5px 1px rgba(var(--box-shadow-color), 0.3);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(var(--box-shadow-color), 0.3);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(var(--box-shadow-color), 0.3);
+}
+
+.counter-box .count {
+    color: rgb(var(--yc-primary-color));
+    font-size: 50px;
+}
+
+.weekly {
+    width: calc(100vw - 30px);
+}
+
+.weekly h3 {
+    padding: 30px 0px 0px 30px;
+}
+
+.all-movies .title {
+    padding: 20px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-container {
+    padding: 25px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 130px);
+    grid-template-rows: repeat(200px);
+    justify-content: center;
+}
+
+.movie-container button {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.movie-container img {
+    width: 130px;
+    height: 200px;
+    box-shadow: -1px 2px 5px 0px rgba(var(--box-shadow-color), 0.7);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(var(--box-shadow-color), 0.7);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(var(--box-shadow-color), 0.7);
+}
+
+.movie-box .movie1 img:hover,
+.movie-container img:hover {
+    scale: 1.1;
+    transition: var(--transition-delay);
+}

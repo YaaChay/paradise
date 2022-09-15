@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaachay/yc-css@master/css/yc-css.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d07d716417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../config.css" type="text/css">
+    <link rel="stylesheet" href="./addmovie.css" type="text/css">
+    <title>AddMovie|Admin</title>
+</head>
+
+<body yc-brightness="dark">
+    <p class="yc-stroked-text">Paradise</p>
+    <div class="input-box">
+        <p>Movie Name:</p>
+        <input type="text" class="yc-input-outline" id="movieName" onfocus="this.select();">
+    </div>
+    <div class="input-box">
+        <p>Mobile Poster URL:</p>
+        <input type="text" class="yc-input-outline" id="mobilePoster">
+    </div>
+    <div class="input-box">
+        <p>Web Poster URL:</p>
+        <input type="text" class="yc-input-outline" id="webPoster">
+    </div>
+    <div class="input-box">
+        <p>Movie Content:</p>
+        <textarea name="" class="yc-textarea-outline" id="movieContent" onfocus="this.select();"></textarea>
+    </div>
+    <div class="input-box">
+        <p>Trailer Video URL:</p>
+        <input type="text" class="yc-input-outline" id="trailer">
+    </div>
+    <div class="input-box">
+        <p>Starring:</p>
+        <textarea name="" class="yc-textarea-outline" id="starring" onfocus="this.select();"></textarea>
+    </div>
+    <div class="input-box">
+        <p>Director:</p>
+        <input type="text" class="yc-input-outline" id="director" onfocus="this.select();">
+    </div>
+    <div class="input-box">
+        <p>Producer:</p>
+        <input type="text" class="yc-input-outline" id="producer" onfocus="this.select();">
+    </div>
+    <div class="input-box">
+        <p>Distributor:</p>
+        <input type="text" class="yc-input-outline" id="distributor" onfocus="this.select();">
+    </div>
+    <div class="input-box">
+        <p>Entrance fee:</p>
+        <input type="number" class="yc-input-outline" id="entranceFee" onfocus="this.select();">
+    </div>
+    <div class="input-box">
+        <p>Date Time:</p>
+        <input type="datetime-local" class="yc-input-outline" id="dateTime">
+    </div>
+    <button class="yc-btn-fill-r1" id="addMovie">Add Movie</button>
+    <script src="./addmovie.js" type="module"></script>
+</body>
+
+</html>

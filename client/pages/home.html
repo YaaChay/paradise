@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaachay/yc-css@master/css/yc-css.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d07d716417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../config/config.css" type="text/css">
+    <link rel="stylesheet" href="./home.css" type="text/css">
+    <title>Home Page|Paradise</title>
+</head>
+
+<body>
+    <div class="nav-bar" id="navBar">
+        <p class="logo yc-stroked-text">Paradise</p>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a id="historyBtn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a id="modeBtn"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a id="menuBtn"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="drawer" id="drawer">
+        <ul>
+            <li><a id="menu1">Home</a></li>
+            <li><a href="#events" id="menu2">Events</a></li>
+            <li><a href="#movies" id="menu3">Movies</a></li>
+            <li><a href="#about" id="menu4">About Us</a></li>
+            <li><a id="drawerModeBtn"><i class="fa-solid fa-moon"></i></a></li>
+        </ul>
+    </div>
+    <div class="container" id="container">
+        <div id="home">
+            <div class="home" id="home">
+                <div class="wel-message">
+                    <h1><span>Watch</span> the most magnificent movie you've <span>never seen.</span></h1>
+                    <p>Watching a good movie makes your mood better.</p>
+                    <a href="#events" class="yc-btn-fill-r2">Booking Now</a>
+                </div>
+                <div class="drop-shadow">
+                    <img src="../../assets/images/cinema.jpeg" alt="">
+                    <span class="mask"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="events" id="events">
+            <div class="day1">
+                <h2 class="yc-h2">1st Day(Friday)</h2>
+                <div class="movie-box" id="movieBox1">
+                </div>
+            </div>
+            <div class="day2">
+                <h2 class="yc-h2">2nd Day(Sunday)</h2>
+                <div class="movie-box" id="movieBox2">
+                </div>
+            </div>
+        </div>
+        <div class="movies" id="movies">
+            <div class="played-movies">
+                <h2 class="yc-h2">Played Movies</h2>
+                <a href="./allmovies.html">Show More</a>
+            </div>
+            <div class="movie-container" id="movieContainer">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h2 class="yc-h2">About Us</h2>
+            <div class="room-preview">
+                <img src="../../assets/images/1.jpg" alt="">
+                <img src="../../assets/images/2.jpg" alt="">
+                <img src="../../assets/images/3.jpg" alt="">
+            </div>
+            <div class="contact">
+                <div class="about-content">
+                    <p><span>“Paradise”</span> is one of the largest movie theaters in Rakhine state. It was established
+                        in 2019 and
+                        is now expanding its services.</p>
+                    <div class="address">
+                        <div>
+                            <p>Location</p>
+                            <p>Pray Taw Thar Rd, Sittway, Rakhine</p>
+                        </div>
+                        <div>
+                            <p>Phone</p>
+                            <p>+959405999313, +9595679180612</p>
+                        </div>
+                        <div>
+                            <p>Mail</p>
+                            <p>yachay498@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map"><img src="../../assets/images/map.png" alt=""></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="#">Term of Services</a> and <a href="#">Pravicy Policy</a></p>
+            <p>Copright &copy; 2019-2022, Paradise</p>
+        </div>
+    </div>
+
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script type="module" src="./home.js"></script>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101808212652433");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v14.0'
+            });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+
+</html>

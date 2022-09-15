@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: logo;
+    src: url("../assets/fonts/TiroGurmukhi-Regular.ttf");
+}
+
+:root {
+    /* --white: 255, 255, 255;
+    --black: 0, 0, 0;
+    --tran-delay: 0.5s; */
+
+    /* YC_CSS Framework */
+    --yc-primary-color: 249, 97, 97;
+    --yc-font-family: Ubuntu-Regular;
+    --yc-background-color: 32, 33, 34;
+
+    /* custome properties */
+    --text-color: 255, 255, 255;
+    --box-shadow-color: 0, 0, 0;
+    --hover-delay: 0.5s;
+    --logo-delay: 1s;
+    --logo-anim-delay: 4s;
+    --transition-delay: 0.5s;
+}

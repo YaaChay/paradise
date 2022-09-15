@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-family: logo;
+    font-size: 80px;
+}
+.sub-text{
+    font-size: 17px;
+    color: rgba(var(--text-color), 0.7);
+}
+.input-box{
+    width: 400px;
+    margin: 20px auto;
+}
+.input-box p{
+    text-align: start;
+    color: rgba(var(--text-color), 0.5);
+}
+.input-box .yc-input-outline{
+    width: 370px;
+}
+.login-btn{
+    margin: 10px auto 50px auto;
+    width: 393px;
+    padding: 12px 0px;
+}

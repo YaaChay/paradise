@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaachay/yc-css@master/css/yc-css.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d07d716417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../config.css" type="text/css">
+    <link rel="stylesheet" href="./movieview.css" type="text/css">
+    <title>MovieView|Admin</title>
+</head>
+
+<body yc-brightness="dark">
+    <div class="bg-container">
+        <img src="../../assets/images/paradise-bg.png" class="bg-img" id="bgImg">
+        <span class="bg-mask"></span>
+    </div>
+    <div class="movie-container">
+        <img src="../../assets/images/paradise-poster.png" class="poster" id="poster">
+        <div class="movie-info">
+            <h1 id="movieName"></h1>
+            <div class="date">
+                <h3 id="entranceFee"></h3>
+                <h3 id="dateTime"></h3>
+            </div>
+            <p id="movieContent">
+            </p>
+            <table class="yc-table-borderless">
+                <tr>
+                    <td>Starring:</td>
+                    <td id="starring"></td>
+                </tr>
+
+                <tr>
+                    <td>Director:</td>
+                    <td id="director"></td>
+                </tr>
+
+                <tr>
+                    <td>Producer:</td>
+                    <td id="producer"></td>
+                </tr>
+                <tr>
+                    <td>Distributor</td>
+                    <td id="distributor"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="trailer">
+        <h3>Trailer</h3>
+        <video class="trailer-video" controls id="video">
+        </video>
+    </div>
+    <div class="btn-container">
+        <button class="yc-btn-outline-r1 edit-btn" id="editBtn"><i class="fa-solid fa-edit"></i> Edit this
+        movie</button>
+        <button class="yc-btn-fill-r1 delete-btn" id="deleteBtn"><i class="fa-solid fa-trash"></i> Delete this
+            movie</button>
+    </div>
+    
+    <script type="module" src="./movieview.js"></script>
+</body>
+
+</html>

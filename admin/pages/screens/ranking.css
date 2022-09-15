@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: calc(100vw - 30px);
+    overflow-x: hidden;
+    background-color: rgb(--yc-background-color);
+}
+
+.ranking-movies {
+    padding: 50px 20px 20px;
+}
+
+.ranking-movies .title {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ranking-movies table{
+    width: calc(100vw - 50px);
+}

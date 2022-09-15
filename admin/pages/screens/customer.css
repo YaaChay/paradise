@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: calc(100vw - 30px);
+    overflow-x: hidden;
+    background-color: rgb(--yc-background-color);
+}
+
+.current-customers {
+    padding: 50px 20px 20px;
+}
+
+.all-customers {
+    padding: 20px;
+}
+
+.current-customers .title,
+.all-customers .title {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-customers table,
+.all-customers table {
+    width: calc(100vw - 50px);
+}
+

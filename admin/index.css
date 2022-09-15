@@ -1,0 +1,93 @@
+body {
+    height: 95vh;
+}
+
+.logo:nth-child(1) {
+    margin: 0px;
+    padding: 0px;
+    height: 15vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+.logo:nth-child(2) {
+    margin: 0px;
+    padding: 0px;
+    height: 15vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.logo path:nth-child(1) {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+}
+
+.logo path:nth-child(2) {
+    stroke-dasharray: 625;
+    stroke-dashoffset: 625;
+    animation: stroke-ainm var(--logo-anim-delay) forwards var(--logo-delay);
+}
+
+.logo path:nth-child(3) {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+}
+
+.logo path:nth-child(4) {
+    stroke-dasharray: 485;
+    stroke-dashoffset: 485;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+.logo path:nth-child(5) {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+.logo path:nth-child(6) {
+    stroke-dasharray: 580;
+    stroke-dashoffset: 580;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+.logo path:nth-child(7) {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+.logo path:nth-child(8) {
+    stroke-dasharray: 615;
+    stroke-dashoffset: 615;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+.logo path:nth-child(9) {
+    stroke-dasharray: 510;
+    stroke-dashoffset: 510;
+    animation: stroke-ainm var(--logo-anim-delay) ease forwards var(--logo-delay);
+
+}
+
+@keyframes stroke-ainm {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

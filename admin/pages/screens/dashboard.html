@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaachay/yc-css@master/css/yc-css.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d07d716417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../config.css" type="text/css">
+    <link rel="stylesheet" href="./dashboard.css" type="text/css">
+    <title>Dashboard|Admin</title>
+</head>
+
+<body yc-brightness="dark">
+    <div class="over-view">
+        <div class="title">
+            <h3>Dashboard</h3>
+            <button class="yc-btn-inkwell-r1" id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Movie
+            </button>
+        </div>
+        <div class="content">
+            <div class="counter-box">
+                <p class="count" id="totalMovies">0</p>
+                <p>Total Movies</p>
+            </div>
+            <div class="counter-box">
+                <p class="count" id="totalViews">0</p>
+                <p>Total Viewers</p>
+            </div>
+        </div>
+    </div>
+    <div class="weekly">
+        <h3>Latest Movies</h3>
+        <div class="movie-container" id="movieContainer1">
+        </div>
+    </div>
+    <div class="all-movies">
+        <div class="title">
+            <h3>All Movies</h3>
+            <input type="search" class="yc-input-outline" name="" id="searchQuery" placeholder="Search">
+        </div>
+        <div class="movie-container" id="movieContainer2">
+    </div>
+    <script type="module" src="./dashboard.js" type="text/javascript"></script>
+</body>
+
+</html>
