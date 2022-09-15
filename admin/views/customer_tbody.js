@@ -20,13 +20,16 @@ function customerTbody(iD, customerName, phoneNo, movieName, seatS, dateTime, or
     mname.innerHTML = movieName;
     seats.innerHTML = seatS;
     datetime.innerHTML = dateTime;
+    payment.setAttribute("align", "center");
     payment.innerHTML = paymentMethod;
+    totalcost.setAttribute("align", "center");
     totalcost.innerHTML = totalCost + " $";
     input.setAttribute("type", "checkbox");
     input.checked = arrived;
     input.classList.add("yc-input-checkbox");
     input.id = "checkbox";
-
+    checkbox.setAttribute("align", "center");
+    checkbox.appendChild(input);
 
     const firebaseConfig = {
         apiKey: "AIzaSyDmbMp1PzpwAml5Y6hsDthn9UB1zbSxmzM",
@@ -52,10 +55,8 @@ function customerTbody(iD, customerName, phoneNo, movieName, seatS, dateTime, or
                 arrived: true
             });
         }
-
     }
     
-    checkbox.appendChild(input);
     tr.appendChild(id);
     tr.appendChild(cname);
     tr.appendChild(phno);
@@ -78,8 +79,8 @@ export { customerTbody }
     <td>Thor:Love and Thunder</td>
     <td>5,6</td>
     <td>8:00 AM, Sep 9, 2022</td>
-    <td>Visa</td>
-    <td>18$</td>
-    <td><input type="checkbox" class="yc-input-checkbox" name="" id=""></td>
+    <td align="center">Visa</td>
+    <td align="center">18$</td>
+    <td align="center"><input type="checkbox" class="yc-input-checkbox" name="" id=""></td>
 </tr>
 */

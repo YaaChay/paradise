@@ -30,3 +30,6 @@ body {
     width: calc(100vw - 50px);
 }
 
+input[type="checkbox"]{
+    cursor: pointer;
+}

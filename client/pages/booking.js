@@ -137,7 +137,6 @@ async function upDateMovie() {
     });
 }
 
-
 setInterval(() => {
     getMovie(); 
     checkSeats();

@@ -49,6 +49,9 @@ async function fetchAllMovies() {
     onSnapshot(coll, (querySnapshot) => {
         querySnapshot.forEach(doc => {
             movies.push(doc.data());
+            movieBox1.innerHTML = "";
+            movieBox2.innerHTML = "";
+            movieContainer.innerHTML = "";
         });
         for (var i = movies.length - 8; i < movies.length - 4; i++) {
             var movie = new MovieContainer(movies[i].dateTime, movies[i].mobilePoster, getTime(movies[i].dateTime));

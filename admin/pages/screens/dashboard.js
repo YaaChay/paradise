@@ -39,6 +39,8 @@ async function fetchAllMovies() {
         querySnapshot.forEach(doc => {
             movies.push(doc.data());
             totalMovies.innerHTML = movies.length;
+            movieContainer1.innerHTML = "";
+            movieContainer2.innerHTML = "";
         });
         movies.forEach((e) => {
             var movie = new Movie(e.dateTime, e.mobilePoster);
@@ -76,8 +78,6 @@ async function searchMovie() {
         });
         matchMovies = [];
         if ((searchQuery.value) == "") {
-            movieContainer1.innerHTML = "";
-            movieContainer2.innerHTML = "";
             fetchAllMovies();
         }
     })

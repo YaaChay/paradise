@@ -47,6 +47,8 @@ async function fetchNotArrivedCustomer() {
         });
         notarrivedcustomers = [];
     })
+    tbody1.innerHTML = "";
+    tbody2.innerHTML = "";
 }
 
 async function fetchArrivedCustomer() {
@@ -66,5 +68,7 @@ async function fetchArrivedCustomer() {
         });
         arrivedcustomers = [];
     })
+    tbody1.innerHTML = "";
+    tbody2.innerHTML = "";
 }
 

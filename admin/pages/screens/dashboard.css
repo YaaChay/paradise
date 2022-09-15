@@ -26,7 +26,7 @@ body {
     padding-left: 70px;
     padding-right: 70px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     place-content: center;
     justify-content: center;
@@ -44,8 +44,20 @@ body {
 }
 
 .counter-box .count {
-    color: rgb(var(--yc-primary-color));
     font-size: 50px;
+}
+
+.counter-box:nth-child(1) .count{
+    color: #75c3cd;
+}
+.counter-box:nth-child(2) .count{
+    color: rgb(var(--yc-primary-color));
+}
+.counter-box:nth-child(3) .count{
+    color: #6cd962;
+}
+.counter-box:nth-child(4) .count{
+    color: #f2bd4b;
 }
 
 .weekly {
