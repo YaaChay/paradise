@@ -73,6 +73,39 @@ function getCurrentDate() {
     //202208230346
 }
 
+function getCurrentTime() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    var day = date.getDate();
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+    var second = date.getMilliseconds();
+
+    if (month < 10) {
+        month = "0" + (month + 1);
+    } else {
+        month = month + 1;
+    }
+    if (day < 10) {
+        day = "0" + day;
+    } else {
+        day = day;
+    }
+    if (hour < 10) {
+        hour = "0" + hour;
+    } else {
+        hour = hour;
+    }
+    if (minute < 10) {
+        minute = "0" + minute;
+    } else {
+        minute = minute;
+    }
+    return year + '' + month + '' + day + '' + hour + '' + minute + second;
+    //202208230346
+}
+
 function getTime(dateTime) {
     var hour = dateTime.substr(8, 2);
     var minute = dateTime.substr(10, 2);
@@ -87,4 +120,4 @@ function getTime(dateTime) {
     //03:52 PM
 }
 
-export { format1, format2, format3, getCurrentDate, getTime };
+export { format1, format2, format3, getCurrentDate, getCurrentTime, getTime };

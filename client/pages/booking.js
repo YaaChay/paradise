@@ -8,7 +8,7 @@ import { createTicket } from "../utils/indexedDBUtil.js";
 import { createCustomer } from "../utils/firestoreUtil.js";
 import { Ticket } from "../models/ticket.js";
 import { Customer } from "../models/customer.js";
-import { format3, getCurrentDate } from "../utils/timeUtil.js";
+import { format3, getCurrentDate, getCurrentTime } from "../utils/timeUtil.js";
 
 var bgImg = document.getElementById("bgImg");
 var poster = document.getElementById("poster");
@@ -183,7 +183,7 @@ seats.forEach(seat => {
 })
 
 bookBtn.onclick = function () {
-    var now = getCurrentDate();
+    var now = getCurrentTime();
     var seatsNo = total_seats.sort(function (num1, num2) {
         return num1 - num2;
     });
