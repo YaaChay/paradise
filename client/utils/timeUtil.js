@@ -59,6 +59,11 @@ function getCurrentDate() {
     } else {
         day = day;
     }
+    if (hour < 10) {
+        hour = "0" + hour;
+    } else {
+        hour = hour;
+    }
     if (minute < 10) {
         minute = "0" + minute;
     } else {
